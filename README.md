@@ -1,6 +1,6 @@
 # Project Euler Solutions
 
-![Project Euler Logo](https://projecteuler.net/themes/20210601/logo_default.png)
+![Project Euler Logo](https://projecteuler.net/themes/logo_default.png)
 
 This repository contains my solutions to the Project Euler problems using Python programming language. Project Euler is a series of challenging mathematical and computational problems that require innovative solutions. This repository serves as a collection of my implementations, providing a reference for others and showcasing my problem-solving skills.
 
@@ -12,15 +12,15 @@ Each problem in Project Euler is independent and requires an efficient solution 
 
 ## Structure
 
-The repository is organized into separate directories for each problem, named in the format `problemXXX`, where `XXX` represents the problem number. Within each directory, you will find a Python script `script.py` that contains my solution to the respective problem.
+The repository is organized into separate directories for each problem, named in the format `XXX. ...`, where `XXX` represents the problem number, and `...` represents the problem name. Within each directory, you will find a Python script `script.py` that contains my solution to the respective problem.
 
 ```
 Project-Euler
-├── 1. Multiples of 3 or 5
+├── 001. Multiples of 3 or 5
 │   └── script.py
-├── 2. ...
+├── 002. ...
 │   └── ...
-├── 3. ...
+├── 003. ...
 │   └── ...
 └── ...
 ```
@@ -32,7 +32,7 @@ Feel free to explore the solutions, analyze the code, and provide any feedback o
 To run the solutions on your local machine, make sure you have Python installed. Clone the repository using the following command:
 
 ```bash
-git clone https://github.com/your-username/Project-Euler.git
+git clone https://github.com/DamonGeelen/Project-Euler.git
 ```
 
 Navigate to the directory of the specific problem you want to execute:
