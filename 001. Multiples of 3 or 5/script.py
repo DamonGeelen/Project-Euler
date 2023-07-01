@@ -16,8 +16,8 @@ def solution(limit):
     solution = sum(multiples_of_three_and_five)
 
     print(
-        "The sum of all the multiples of 3 or 5 below " + str(limit) + " is",
-        str(solution) + "."
+        "The sum of all the multiples of 3 or 5 below " + str(limit),
+        "is " + str(solution) + "."
     )
 
 solution(1000)

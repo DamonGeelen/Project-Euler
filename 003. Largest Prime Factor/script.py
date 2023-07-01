@@ -12,7 +12,10 @@ def is_prime(number):
     if number < 1:
         return False
     
-    for i in range(2, floor(number / 2)):
+    if not number % 2:
+        return False
+    
+    for i in range(3, floor(number / 2), 2):
         if not number % i:
             return False
         
@@ -26,7 +29,4 @@ def prime_factors(number):
 
     return prime_factors
 
-def solution(number):
-    print(max(prime_factors(number)))
-
-solution(600851475143)
+prime_factors(600851475143)
