@@ -5,28 +5,43 @@ The prime factors of 13195 are 5, 7, 13 and 29.
 What is the largest prime factor of the number 600851475143?
 '''
 
-from math import floor
+from math import isqrt
 
 def is_prime(number):
-
-    if number < 1:
-        return False
+    """
+    Check if a number is prime.
     
-    if not number % 2:
-        return False
-    
-    for i in range(3, floor(number / 2), 2):
-        if not number % i:
-            return False
+    Args:
+        number (int): The number to check.
         
+    Returns:
+        bool: True if the number is prime, False otherwise.
+    """
+    if number == 2 or number == 3:
+        return True
+    
+    if number % 2 == 0:
+        return False
+
+    if number <= 1:
+        return False
+
+    for i in range(3, isqrt(number) + 1, 2):
+        if number % i == 0:
+            return False
+
     return True
 
 def prime_factors(number):
+    """
+    Returns a list of prime factors of the given number.
+    """
+    factors = []
+    for i in range(2, isqrt(number) + 1):
+        if not number % i:
+            if is_prime(i):
+                factors.append(i)
+    return factors
 
-    for i in range(2, floor(number / 2)):
-        if (not number % i) and (is_prime(i)):
-            print(i)
-
-    return prime_factors
-
-prime_factors(600851475143)
+print('The largest prime factor of the number 600851475143 is: ')
+print(prime_factors(600851475143)[-1])
