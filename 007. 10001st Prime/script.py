@@ -62,3 +62,43 @@ def nth_prime(n):
 
 print('The 10,001st prime number is: ')
 print(nth_prime(10001))
+
+# ---------------------------------- Unit Testing ----------------------------------
+
+# Checks if the function correctly identifies the number 0 as a non-prime number.
+def test_prime_number_0(self):
+    assert is_prime(0) == False
+
+# Checks if the function correctly identifies the number 2 as a prime number.
+def test_prime_number_2(self):
+    assert is_prime(2) == True
+
+# Checks if the function correctly identifies the number 3 as a prime number.
+def test_prime_number_3(self):
+    assert is_prime(3) == True
+
+# Checks if the function correctly identifies the number 4 as a non-prime number.
+def test_prime_number_4(self):
+    assert is_prime(4) == False
+
+# Checks if the function correctly identifies the number 5 as a prime number.
+def test_prime_number_5(self):
+    assert is_prime(5) == True
+
+# Checks if the funciton correctly identifies a negative number as non-prime.
+def test_negative_number(self):
+    assert is_prime(-1) == False
+    assert is_prime(-2) == False
+    assert is_prime(-3) == False
+
+# returns 2 when n=1
+def test_returns_2_when_n_is_1(self):
+    assert nth_prime(1) == 2
+
+# returns 3 when n is 2
+def test_returns_3_when_n_is_2(self):
+    assert nth_prime(2) == 3
+
+# returns 5 when n is 3
+def test_returns_13_when_n_is_6(self):
+    assert nth_prime(6) == 13
