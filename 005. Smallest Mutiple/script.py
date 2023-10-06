@@ -31,11 +31,10 @@ print(smallest_multiple(20))
 
 # -------------------------- Unit Testing --------------------------
 
-# Returns smallest multiple of 1 to max_divisor (inclusive)
-def test_smallest_multiple_1_to_10(self):
-    assert smallest_multiple(1) == 1
-    assert smallest_multiple(2) == 2
-    assert smallest_multiple(3) == 6
-    assert smallest_multiple(4) == 12
-    assert smallest_multiple(5) == 60
-    assert smallest_multiple(10) == 2520
+# Test for known values
+assert smallest_multiple(1) == 1
+assert smallest_multiple(2) == 2
+assert smallest_multiple(3) == 6
+assert smallest_multiple(4) == 12
+assert smallest_multiple(5) == 60
+assert smallest_multiple(10) == 2520

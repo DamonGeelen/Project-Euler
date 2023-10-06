@@ -44,37 +44,28 @@ print("of two 3-digit numbers is", max(palindromes))
 # -------------------------- Unit Testing --------------------------
 
 # Tests that the function returns True for a palindrome number
-def test_palindrome_number(self):
-    assert is_palindrome(121) == True
+assert is_palindrome(121) == True
 
 # Tests that the function returns False for a non-palindrome number
-def test_non_palindrome_number(self):
-    assert is_palindrome(123) == False
+assert is_palindrome(123) == False
 
 # Tests that the function returns True for a single digit number
-def test_single_digit_number(self):
-    assert is_palindrome(5) == True
+assert is_palindrome(5) == True
 
 # Tests that the function returns False for a negative number
-def test_negative_number(self):
-    assert is_palindrome(-121) == False
+assert is_palindrome(-121) == False
 
 # Tests that the function returns True for zero
-def test_zero(self):
-    assert is_palindrome(0) == True
+assert is_palindrome(0) == True
 
 # Tests that the function returns True for a string that is a palindrome number
-def test_string_input(self):
-    assert is_palindrome('1221') == True
+assert is_palindrome('1221') == True
 
 # Tests that the function returns False for a float input
-def test_float_input(self):
-    assert is_palindrome(12.21) == False
+assert is_palindrome(12.21) == False
 
 # Tests that the function returns True for a palindrome string input
-def test_palindrome_string_input(self):
-    assert is_palindrome('racecar') == True
+assert is_palindrome('racecar') == True
 
 # Tests that the function returns False for a non-palindrome string input
-def test_non_palindrome_string_input(self):
-    assert is_palindrome('hello') == False
+assert is_palindrome('hello') == False

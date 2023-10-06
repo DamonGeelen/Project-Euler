@@ -48,11 +48,9 @@ print(sum_square_diff(100))
 # -------------------- Unit Testing -------------------- 
 
 # Test with limit = 1
-def test_limit_1(self):
-    result = sum_square_diff(1)
-    assert result == 0
+result = sum_square_diff(1)
+assert result == 0
 
 # Test with limit = 10
-def test_limit_10(self):
-    result = sum_square_diff(10)
-    assert result == 2640
+result = sum_square_diff(10)
+assert result == 2640
